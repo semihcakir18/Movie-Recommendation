@@ -85,5 +85,19 @@ if st.sidebar.button("Tavsiye Getir", key="recommend_button"):
                     st.success(f"**{i+1}. {movie}**")
             else:
                 st.error(hybrid_recs[0])
+
+    # --- Kullanıcının Geçmiş Yorumları ---
+    st.divider()
+
+    st.subheader("Önceki Yorumladığınız Filmler")
+
+    user_rated_movies = df[df['userId'] == selected_user_id].sort_values(by="rating", ascending=False)
+
+    if not user_rated_movies.empty:
+        with st.expander("Listeyi görmek için tıklayın..."):
+            for _, row in user_rated_movies.iterrows():
+                st.write(f"- **{row['title']}** (Verdiğiniz Puan: {row['rating']})")
+    else:
+        st.info("Bu kullanıcının geçmişte yorumladığı bir film bulunamadı.")
 else:
     st.info("Lütfen sol menüden bir film ve kullanıcı seçip 'Tavsiye Getir' butonuna tıklayın.")
