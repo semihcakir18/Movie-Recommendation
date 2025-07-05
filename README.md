@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/bfbd9cde-62d2-4de2-8c5a-351a5c8f9e27)
+
 # Akıllı Hibrit Film Tavsiye Sistemi
 
 ## Açıklama
