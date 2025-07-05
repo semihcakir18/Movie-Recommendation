@@ -1,5 +1,7 @@
 pandas
-numpy
+numpy<2.0
+matplotlib
+seaborn
 scikit-learn
+scikit-surprise
 streamlit
-scikit-surprise==1.1.4

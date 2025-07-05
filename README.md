@@ -50,6 +50,4 @@ streamlit run app.py
 
 Bu komutu çalıştırdıktan sonra web tarayıcınızda uygulamanın arayüzü açılacaktır. Arayüz üzerinden beğendiğiniz bir filmi ve kendi kullanıcı ID'nizi seçerek hibrit tavsiyeler alabilirsiniz.
 
-## Ekran Görüntüsü
 
-(Buraya uygulamanın çalışan halinden bir GIF veya resim eklenebilir.)
